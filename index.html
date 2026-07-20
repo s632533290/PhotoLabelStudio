@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Photo Label Studio helps you make printable photo and text labels on your device.">
+  <title>Photo Label Studio</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./?lang=en-US#marketing" aria-label="Photo Label Studio home">Photo Label Studio</a>
+    <nav aria-label="Primary navigation">
+      <a data-nav="marketing" href="#marketing" data-i18n="navMarketing">About</a>
+      <a data-nav="support" href="#support" data-i18n="navSupport">Support</a>
+      <a data-nav="privacy" href="./privacy/" data-i18n="navPrivacy">Privacy</a>
+    </nav>
+    <label class="language-picker">
+      <span class="sr-only" data-i18n="languageLabel">Language</span>
+      <select id="language" aria-label="Language"></select>
+    </label>
+  </header>
+
+  <main>
+    <section id="marketing" class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow" data-i18n="eyebrow">PRINTABLE LABELS, MADE LOCALLY</p>
+      <h1 id="hero-title" data-i18n="title">Make labels from photos or text.</h1>
+      <p class="hero-copy" data-i18n="lead">Arrange your labels on a sheet, then print or save a PDF from your iPhone or iPad.</p>
+      <div class="pills" aria-label="Product highlights">
+        <span data-i18n="pillPhotos">Photo labels</span>
+        <span data-i18n="pillText">Text labels</span>
+        <span data-i18n="pillLocal">On-device workflow</span>
+      </div>
+    </section>
+
+    <section class="feature-grid" aria-label="Features">
+      <article>
+        <h2 data-i18n="feature1Title">Start with what you have</h2>
+        <p data-i18n="feature1Body">Choose photos from your library or write text labels. You decide what to add to a project.</p>
+      </article>
+      <article>
+        <h2 data-i18n="feature2Title">Set up the sheet</h2>
+        <p data-i18n="feature2Body">Use A4, US Letter, or a custom sheet. Pick a starting position and leave used cells empty.</p>
+      </article>
+      <article>
+        <h2 data-i18n="feature3Title">Preview, export, print</h2>
+        <p data-i18n="feature3Body">Preview the layout, save a PDF locally, or print with AirPrint. A calibration page helps align your printer.</p>
+      </article>
+    </section>
+
+    <section id="privacy" class="panel privacy" aria-labelledby="privacy-title">
+      <p class="eyebrow" data-i18n="privacyEyebrow">PRIVACY</p>
+      <h2 id="privacy-title" data-i18n="privacyTitle">Your label projects stay on your device.</h2>
+      <p data-i18n="privacyIntro">Photo Label Studio works locally. It has no account system and no app server for your photos or projects.</p>
+      <ul id="privacy-facts"></ul>
+      <p class="policy-note" data-i18n="policyNote">This policy applies to the Photo Label Studio app and this website.</p>
+    </section>
+
+    <section class="panel purchase" aria-labelledby="purchase-title">
+      <p class="eyebrow" data-i18n="purchaseEyebrow">PURCHASE</p>
+      <h2 id="purchase-title" data-i18n="purchaseTitle">A one-time in-app purchase unlocks the full app.</h2>
+      <p data-i18n="purchaseBody">There are no subscriptions. Purchase options are shown in the app before you buy.</p>
+    </section>
+
+    <section id="support" class="panel support" aria-labelledby="support-title">
+      <p class="eyebrow" data-i18n="supportEyebrow">SUPPORT</p>
+      <h2 id="support-title" data-i18n="supportTitle">Need help with a label or print?</h2>
+      <p data-i18n="supportBody">For print alignment, try the calibration page in the app. For product updates and support, contact the developer through the channels below.</p>
+      <div class="contact-card">
+        <p><strong data-i18n="contactLabel">Contact</strong></p>
+        <p>小红书：楚游尘</p>
+        <p>少数派：楚游尘</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Photo Label Studio</span>
+    <a data-nav="privacy" href="./privacy/" data-i18n="navPrivacy">Privacy</a>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
