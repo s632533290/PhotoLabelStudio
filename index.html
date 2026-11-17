@@ -50,9 +50,15 @@
 
     <section id="privacy" class="panel privacy" aria-labelledby="privacy-title">
       <p class="eyebrow" data-i18n="privacyEyebrow">PRIVACY</p>
-      <h2 id="privacy-title" data-i18n="privacyTitle">Your label projects stay on your device.</h2>
-      <p data-i18n="privacyIntro">Photo Label Studio works locally. It has no account system and no app server for your photos or projects.</p>
-      <ul id="privacy-facts"></ul>
+      <h2 id="privacy-title" data-i18n="privacyTitle">Local projects, optional iCloud sync.</h2>
+      <p data-i18n="privacyIntro">Photo Label Studio stores your selected photos and projects on your device by default. No separate app account is required.</p>
+      <ul id="privacy-facts">
+        <li>Free output allowance: the app uses StoreKit verification and saves up to three allowance records in Apple's CloudKit public database. Their identifiers are hashes derived from the app identifier, verified App Store app transaction identifier and allowance slot. These records contain no project text or photos. Internet and an available iCloud account are required; allowance verification does not enable project sync.</li>
+        <li>Optional Studio Pro sync: when you turn on Private iCloud Sync, projects, project photos, templates, glossaries, import profiles and rosters are uploaded to your iCloud private database for use on your devices signed in to the same iCloud account.</li>
+        <li>Turning sync off keeps local projects and does not delete existing cloud copies. With sync on, project deletions are synchronized. Backups, exported files and copies in other apps are managed separately.</li>
+        <li>Purchases and restores are handled through Apple StoreKit. The app does not receive your full payment-card details. Sharing and printing send content to the destination or printer you choose.</li>
+        <li>No advertising or cross-app tracking is used. For questions about this policy or your data, use the support contacts below.</li>
+      </ul>
       <p class="policy-note" data-i18n="policyNote">This policy applies to the Photo Label Studio app and this website.</p>
     </section>
 
